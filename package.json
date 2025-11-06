@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+  "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,10 +22,11 @@
     "react-redux": "^7.2.5",
     "react-toastify": "^8.0.3",
     "redux": "^4.1.1",
-    "styled-components": "^5.3.1",
+    "styled-components": "^5.3.11",
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.35",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2"
   }
